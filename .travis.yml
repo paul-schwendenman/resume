@@ -1,0 +1,17 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends latexmk
+  texlive-fonts-extra texlive-fonts-recommended texlive-latex-base texlive-latex-extra
+  texlive-latex-recommended
+script:
+- latexmk -pdf resume.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: V7BJchMPv4FcpbY/dgaIvcgceK6Q6q3aaW9/BSuzFpsgcFgnTkgxgEwiRq4HoG6JoWQpPX+zBvChPCZmSdUTSqm6+sVd5SvkfXGd3x6qXbWLkj/3JErRsL9YcKs89uisTKoEaO82oBqd0lgZsd0K7o0kls+sJwdnc4h/MCyOmDd4t1O4YRJOFeLSZdOY5C1FT2kLx2TFhzbHpia4Suj06ZJYzcKmC8UXUZll7N5zBkSGUjsTT5E9wRfltg48oG1JQUdlCca5AoSvruynmMDSIswZed5Zr6jipEoJarJZC+wSEjH+lt8xhrr9H7mNSkXkNuF6t6Wy5XiMFG77nyJ47ch5wFyMgJdJnSDE3JgBz7iLHgUav0rmEzWg/EFkb7Cc1Q8PP9MtTvaQtrM4qgPiwcHQhQd8Jk2PK2DhdRHHC0+YrlfCr9AYKaejuNifBmNm2Q/L1upimaaCx/mi9HtsJ01BuFdO1c4MP75aOMcvHEt1S7u3qR/EIR1cLq8ZhILDd8k3G0Fn96D+nTJj8dKhCZlBAVoMGktkbVqVWmoVf5zGZ0RD6vUk6Uvoa3fFuaDz1wyNn+XZUdntzZoKQVnWHJpx2eHnPKYtBEaTpr3+c7nzs7FTj/w88m3sDv9InTYnsLzlHL/H/vUSop+g6fZYrFrOMTtzWIDs5GfHuudzxG4=
+  file:
+  - resume.pdf
+  skip_cleanup: true
+  on:
+    tags: true
