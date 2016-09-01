@@ -1,0 +1,8 @@
+image: tianon/latex
+
+pdf:
+  script:
+  - latexmk -pdf resume.tex
+  artifacts:
+    paths:
+      - resume.pdf
