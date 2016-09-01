@@ -6,6 +6,13 @@ To compile run::
 	pdflatex resume.tex
 
 
+Spell Check
+=============
+
+::
+
+	 aspell --lang=en --mode=tex check resume.tex
+
 Requirements
 =============
 
