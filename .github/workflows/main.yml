@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.pdf
+          root_file: resume.tex
       - uses: actions/upload-artifact@v2
         with:
           name: PDF
