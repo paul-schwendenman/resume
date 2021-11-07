@@ -1,0 +1,23 @@
+name: CI - PDF Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.pdf
+      - uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: resume.pdf
