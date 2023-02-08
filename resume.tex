@@ -7,7 +7,7 @@
 \textheight=10in
 \pagestyle{empty}
 %\raggedbottom
-\raggedright
+\raggedright{}
 
 %  \renewcommand{\encodingdefault}{cg}
   %\renewcommand{\rmdefault}{lgrcmr}
@@ -15,7 +15,7 @@
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 % DEFINITIONS FOR RESUME
 \newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}:   #2 \end{verse}  }
-\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill{} \\}
 \newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
 \newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
 \newcommand{\jobtitle}[1]{{ \underline{\textbf{\emph{#1}}}\\ }}
@@ -25,12 +25,12 @@
 \vspace*{-8pt}
 \begin{center}
 {\LARGE \scshape {#1}}\\
-#2 \lineunder
+#2 \lineunder{}
 #3
 \end{center}
 \vspace*{-8pt}
 }
-\newenvironment{achievements}{\begin{list}{$\circ$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newenvironment{achievements}{\begin{list}{$\circ$}{\topsep{} 0pt \itemsep{} -2pt}}{\vspace*{4pt}\end{list}}
 \newcommand{\schoolwithcourses}[4]{
  \textbf{#1} #2 $\bullet$ #3\\
 #4 $\bullet$  Selected Coursework:\\
@@ -85,7 +85,7 @@
 	\item Worked on a team responsible for rewriting the code base of a critical third party integration
 	\item Responsible for writing clean, functional, well-tested code
 	\item Understanding business goals and taking them into account when making technical decisions
-	\item Responsible for working with product owners, analysts to move company’s priorities forward
+	\item Responsible for working with product owners, analysts to move company's priorities forward
 	% \item Thinks critically about assigned work to guarantee business functionality
 	% \item Positively influences other engineers, both directly and indirectly
 	\end{achievements}
@@ -147,9 +147,9 @@ situations..
 
 \header{Skills}
 \begin{achievements}
-	\item python, javascript, node.js, react, HTML, CSS, ruby, docker, bash,
-	\item bootstrap, postgreSQL, mongoDB, traefik, nginx, Apache, \LaTeX
-	\item unix tools, terraform, GNU/Linux, git, regular expressions, agile methodology
+	\item python, django, javascript, node.js, react, svelte, HTML, CSS, ruby, rails,
+	\item docker, bash, bootstrap, postgreSQL, mongoDB, traefik, nginx, Apache, \LaTeX{}
+	\item UNIX tools, terraform, GNU/Linux, git, regular expressions, agile methodology
 \end{achievements}
 
 
