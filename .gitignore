@@ -4,3 +4,8 @@
 *.fls
 *.fdb_latexmk
 resume.pdf
+
+# Ignore vscode settings
+/.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
