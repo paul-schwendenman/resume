@@ -1,0 +1,6 @@
+services:
+  builder:
+    build: ./
+    volumes:
+      - "./:/code"
+    command: pdflatex resume.tex
