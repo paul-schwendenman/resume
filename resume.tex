@@ -40,6 +40,8 @@
  \textbf{#1} #2 $\bullet$ #3\\
 #4 \\
 }
+
+\newcommand{\ts}{\textsuperscript}
 % END RESUME DEFINITIONS
 
 \begin{document}
@@ -74,90 +76,91 @@
 \employer{eFuse}{2023-current}{Senior Software Engineer}
 	\begin{achievements}
 	\item Served as the technical lead for the core team which was responsible for our the centralized internal authentication, authorization, and account service
-	\item Integrated applications with auth0 and managed oauth2 integrations
 	\item Worked on the platform team to set technical direction and standards for the engineering organization
 	\item Managed AWS and Cloudflare resources with terraform
+	\item Integrated applications with auth0 and managed oauth2 integrations
 	\item Automated the deployment of services to kubernetes using helm charts and github actions
 	\item Aided and mentored junior folks in order to uplift and grow others
 	\end{achievements}
 \employer{Upstart}{2022-2023}{Senior Software Engineer}
 	\begin{achievements}
-	\item Responsible for the maintenance and delivery of several monthly reports, our daily reporting API and the quarterly loan pledging process
-	\item Worked with business partners to identify and plan work to build tools which would improve the productivity their daily tasks
-	\item Responsible for leading team meetings including retros and other agile ceremonies
-	\item Mentored and brought several new team members including an early career junior hire up to speed
-	\item Responsible for planning and executing adding a new debt sale process which saved many person-hours each month
+	\item Maintained and delivered several monthly CSV reports, our daily reporting API, and the quarterly loan pledging process
+	\item Collaborated with business partners to identify and plan work to build tools which would improve the productivity their daily tasks
+	\item Lead team meetings including retros and other agile ceremonies
+	\item Onboarded several new team members including an early career junior hire
+	\item Planned and executed a project to create a new debt sale process which saved many person-hours each month
 	\end{achievements}
 \employer{Root Insurance}{2020-2021}{Software Engineer}
 	\begin{achievements}
-	\item Working on a team responsible for making full stack changes to add new functionality which enables new business goals
-	\item Worked on a team responsible for rewriting the code base of a critical third party integration
-	\item Responsible for writing clean, functional, well-tested code
-	\item Understanding business goals and taking them into account when making technical decisions
-	\item Responsible for working with product owners, analysts to move company's priorities forward
+	\item Rebuilt the homeowners product to use latest version of a 3\ts{rd} party API, including building dashboards to track the rollout
+	\item Worked on a team responsible for making full stack changes to add new functionality which enables new business goals during underwriting
+	\item Worked with product owners, analysts to move company's priorities forward including limiting loopholes in the insurance forms
+	% \item Responsible for writing clean, functional, well-tested code
+	% \item Understood and accounted for business goals while making technical decisions
 	% \item Thinks critically about assigned work to guarantee business functionality
 	% \item Positively influences other engineers, both directly and indirectly
 	\end{achievements}
 \employer{Pillar Technology}{2015-2020}{Senior Software Artisan / Technical lead}
 	\begin{achievements}
-	\item Worked on many different clients and teams to rapidly develop valuable working software
-	\item Helped to create a React based data visualization tool for a major oil producer
-	\item Worked on a project to build scheduling software for nursing home staff
-	\item Created a proof of concept for how to modernize the payment system for a major gas station operator
-	\item Helped to build a data platform which helped to provide access to mobility data
-	\item Responsible for creating an application to manage vulnerabilities returned on a network vulnerability scan for a security company
-	\item Created an application used to research from multiple data sources for suspicious network activity for a security company
-	\item Responsible for helping to isolate and replace the legacy website and allow for new development with modern tools
+	\item Worked on many different clients and teams to rapidly develop valuable working software:
+	\begin{list}
+		\item Helped lead a team to create a React based data visualization tool for a major oil producer
+		\item Lead a project to build scheduling software for nursing home staff
+		\item Created a proof of concept for how to modernize the payment system for a major gas station operator
+		\item Helped to build a data platform which helped to provide access to mobility data
+		\item Responsible for creating an application to manage vulnerabilities returned on a network vulnerability scan for a security company
+		\item Created an application used to research from multiple data sources for suspicious network activity for a security company
+		\item Isolated and replace the legacy website and allow for new development with modern tools using strangler pattern
+	\end{list}
 	% \item Responsible for breaking down work and delivering value quickly for the client
-	\item Responsible for peer up lift and mentoring both in the team space, during pairing and one-on-one touch bases
-	\item Responsible for maintaining a well groomed backlog to keep the team busy
-	\item Responsible for building a client relationship around trust and results
-	% \item Worked on multiple proof of concepts for clients where we rapidly developed working software
-	\item Responsible for writing high quality code that would solve valuable business problems
+	\item Mentored and uplifted peers in the team space, while pairing, and during one-on-one touch bases
+	\item Maintained a well groomed backlog to keep the team busy
+	\item Built client relationships around trust and results
+	\item Wrote well-tested high quality code that would solve valuable business problems
 	% \item Responsible for creating a federated CI system using Docker, Consul, Vault and Jenkins
 	%\item Responsible for writing UI acceptance tests for an iOS application in Ruby using Cucumber and Calabash
 	\end{achievements}
 
 \employer{Olah Healthcare}{2013-2015}{Python Stack Developer}
 	\begin{achievements}
-	\item Responsible for developing, maintaining and installing a Django application for multiple clients
-	\item Interacted with clients to properly setup and configure their installation.
-	\item Used Fabric to automate maintenance of installations
-	\item Made scripts to help with the configuration and debugging of
-	installations
-	\item Helped with the planning and design of future projects
-	\item Trained interns and new hires bringing them up to speed with
-	the stack
+	\item Developed, maintained, installed, and supported a Django application which managed legacy medical records for multiple
+	      customers
+	\item Helped with the planning and design of future projects. Trained interns and new hires bringing them up to
+		  speed with the stack
+	% \item Interacted with clients to properly setup and configure their installation.
+	% \item Used Fabric to automate maintenance of installations
+	% \item Made scripts to help with the configuration and debugging of installations
+	% \item Helped with the planning and design of future projects
+	% \item Trained interns and new hires bringing them up to speed with the stack
 	\end{achievements}
 
 \employer{Ohio State ElectroScience Lab}{2012}{Internship}
 	\begin{achievements}
-	\item Responsible for designing front and rear window conformal antennas for the Chevrolet Volt.
-	\item Maintained and expanded a Matlab project
+	\item Designed front and rear window conformal antennas for the Chevrolet Volt using Matlab.
+	% \item Maintained and expanded a Matlab project
 	\end{achievements}
 
 \employer{Memorize.com}{2010}{Internship}
 	\begin{achievements}
-	\item Ruby Web-development using the Merb Web Development framework
-(similar to Rails)
-	\item Created and Updated unit tests for the site to test the proper
-interaction of components.
-	\item Was responsible for browser based layout and functionality testing
-making sure the website worked and looked correct..
+	\item Paired directly with founder to develop a fullstack Ruby application including writing
+	      unit, browser and functionality tests
+	% \item Created and Updated unit tests for the site to test the proper
+    %       interaction of components.
 	\item Discussed the direction of the site and planning
-for the addition of the ``for pay'' features..
-	\item Discussed use cases and edge cases for a wide variety of
-situations..
-	\item Helped create content for the site and improve some of the
-	user generated content.
-	\item Was responsible for posting interesting pages to the Memorize.com twitter
+          for the addition of the ``for pay'' features
+	% \item Ruby Web-development using the Merb Web Development framework (similar to Rails)
+	% \item Was responsible for browser based layout and functionality testing
+    %       making sure the website worked and looked correct..
+	% \item Discussed use cases and edge cases for a wide variety of situations.
+	% \item Helped create content for the site and improve some of the user generated content.
+	% \item Was responsible for posting interesting pages to the Memorize.com twitter
 	account.
 	\end{achievements}
 
 \header{Skills}
 \begin{achievements}
-	\item python, django, javascript, node.js, react, svelte, HTML, CSS, ruby, rails,
-	\item docker, k8s, bash, bootstrap, postgreSQL, mongoDB, traefik, nginx, Apache, \LaTeX{}
+	\item python, django, javascript, typescript, node.js, react, svelte, HTML, CSS, ruby, rails,
+	\item docker, k8s, bash, tailwind css, postgreSQL, mongoDB, traefik, nginx, Apache, \LaTeX{}
 	\item UNIX tools, terraform, GNU/Linux, git, regular expressions, agile methodology
 \end{achievements}
 
