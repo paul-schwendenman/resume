@@ -1,0 +1,27 @@
+name: Releases
+
+on:
+  push:
+    tags:
+    - '*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: xu-cheng/latex-action@v3
+      with:
+        root_file: resume.tex
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "resume.pdf"
+        tag: ${{ github.event.inputs.tag || '' }}
